@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="player-audio"></audio>
+
+    <section id="constelacion" class="active">
+        <div class="stars-container" id="stars-container">
+            </div>
+        <div class="overlay">
+            <h2 class="mes-anniversary">Feliz mes ❤️💕</h2>
+            <h1>Nuestro Universo</h1>
+            <p>Explora el cielo y toca las estrellas más brillantes para revivir nuestros momentos más bonitos</p>
+        </div>
+    </section>
+
+    <section id="reproductor" class="hidden">
+        <div class="player-card">
+            <div class="album-art" id="album-art">
+                <img src="img/WhatsApp Image 2025-10-24 at 8.24.49 PM.jpeg" alt="Portada">
+            </div>
+            
+            <div class="track-info">
+                <h2 id="track-title">Cargando momento...</h2>
+                <p id="track-desc">Prepárate para recordar...</p>
+            </div>
+
+            <div class="controls">
+                <button onclick="prevMoment()">⏮</button>
+                <button class="play-btn" id="main-play-btn" onclick="togglePlay()">▶</button>
+                <button onclick="nextMoment()">⏭</button>
+            </div>
+
+            <button class="nav-back" onclick="toggleSections()">⬅ Volver a las Estrellas</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
